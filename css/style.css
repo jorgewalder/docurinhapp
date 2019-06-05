@@ -1,0 +1,164 @@
+@font-face {
+font-family: 'moon_flower_boldregular';
+src: url('../fonts/moon_flower_bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+  body{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #595959;
+    background: #f4f3ef;
+    background-image: url(../img/grey-bg.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+.color-white{
+    color: #f4f3ef;
+}
+.top-absolute{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+.top-header {
+    background-color: #ff8d92;
+    height: 60px;
+}
+.triangle {
+    background: url(../img/arrow.png) repeat-x;
+}
+/* Standard syntax */
+@keyframes arrows {
+    from {
+      background-position: 0px 0px  ;
+    }
+    to {
+      background-position: 32px 0px ;
+    }
+  }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes arrows {
+    from {
+        background-position: 0px 0px  ;
+    }
+    to {
+        background-position: 32px 0px ;
+    }
+}
+.main{
+    text-align: left;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.h-100 {
+    height: 100vh !important;
+}
+.align-items-center {
+    align-items: center !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.form-default{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 20px 10px;
+}
+.btn-pink-cake {
+    background-color: #fba1a1;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.mar-top-20 {
+    margin-top: 20px;
+}
+.btn-send {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.welcome h2 {
+    font-family: 'moon_flower_boldregular';
+    font-size: 40px;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+    -webkit-animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+    animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.pink-color {
+    color: #fba1a1;
+}
+
+@media (min-width: 768px){
+.welcome h2:before, .welcome h2:after {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    border-radius: 50px;
+}
+}
+.welcome h2:before, .abouts-cake h2:after {
+    background-color: #fba1a1;
+}
+.welcome h2:before {
+    left: 300px;
+}
+.welcome h2:before, .welcome h2:after {
+    background-color: #fba1a1;
+}
+.welcome h2:after {
+    right: 300px;
+}
+.mini-logo{
+    width: 170px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.card-wrap{
+    text-align: center;
+}
+.count-up-wrapper-2{
+    font-weight: bold;
+    font-size: 5.5rem;
+    line-height: 1;
+}
+.page-item.active .page-link {
+    background-color: #ff8d92;
+    border-color: #ff8d92;
+}
+.page-link {
+    color: #ff8d92;
+}
+.table-wrap {
+    margin-top: 10rem;
+}
+@media (max-width: 768px){
+    .table-wrap {
+        margin-top: 2rem;
+    }
+}
